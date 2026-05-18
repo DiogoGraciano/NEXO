@@ -36,7 +36,9 @@ class ApiService {
         return response;
       },
       (error) => {
-        if (error.response?.status === 401) {
+        const requestUrl: string = error.config?.url ?? '';
+        const isAuthRequest = requestUrl.startsWith('/auth');
+        if (error.response?.status === 401 && !isAuthRequest) {
           store.dispatch(clearAuth());
           window.location.href = '/login';
         }

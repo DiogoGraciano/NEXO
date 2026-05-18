@@ -95,14 +95,22 @@ describe('axios interceptors', () => {
   });
 
   it('response interceptor dispatches clearAuth and redirects on 401', async () => {
-    const err = { response: { status: 401 } };
+    const err = { response: { status: 401 }, config: { url: '/students' } };
     await expect(responseRejecters[0](err)).rejects.toEqual(err);
     expect(clearAuthMock).toHaveBeenCalledTimes(1);
     expect(window.location.href).toBe('/login');
   });
 
+  it('response interceptor does NOT redirect on 401 from /auth (wrong password)', async () => {
+    const originalHref = window.location.href;
+    const err = { response: { status: 401 }, config: { url: '/auth' } };
+    await expect(responseRejecters[0](err)).rejects.toEqual(err);
+    expect(clearAuthMock).not.toHaveBeenCalled();
+    expect(window.location.href).toBe(originalHref);
+  });
+
   it('response interceptor does NOT redirect for non-401 errors', async () => {
-    const err = { response: { status: 500 } };
+    const err = { response: { status: 500 }, config: { url: '/students' } };
     await expect(responseRejecters[0](err)).rejects.toEqual(err);
     expect(clearAuthMock).not.toHaveBeenCalled();
   });
