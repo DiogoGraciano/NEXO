@@ -11,6 +11,32 @@ Sistema web para acompanhamento acadêmico e profissional de estudantes — gere
 
 ---
 
+## Documentação
+
+- 📘 **Manual do Usuário (HTML com screenshots):** abra [docs/manual/index.html](docs/manual/index.html) localmente, ou publique via GitHub Pages (instruções abaixo).
+- 📄 Documentação técnica/acadêmica: [docs/Nexo-Documentacao.md](docs/Nexo-Documentacao.md).
+
+### Publicar o manual no GitHub Pages
+
+1. No GitHub, vá em **Settings → Pages**.
+2. Em **Source**, selecione *Deploy from a branch*.
+3. Branch: `main` · Folder: `/docs` · clique em **Save**.
+4. Após alguns segundos, o manual estará em
+   `https://<usuário>.github.io/<repositório>/` (redireciona para `manual/index.html`).
+
+### Regenerar os screenshots do manual
+
+```bash
+cd frontend
+bun install                  # se ainda não fez
+bun run manual:capture       # sobe backend + frontend + docker + roda Playwright
+```
+
+As imagens são gravadas em `docs/manual/assets/images/`. Veja
+[frontend/e2e/manual/capture.spec.ts](frontend/e2e/manual/capture.spec.ts).
+
+---
+
 ## Funcionalidades
 
 - **Gestão de estudantes** — cadastro completo com histórico de encaminhamentos

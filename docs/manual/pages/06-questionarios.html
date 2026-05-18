@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Questionários — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Cadastros › Questionários</p>
+        <h1>Questionários</h1>
+        <p class="lead">
+          Questionários são formulários personalizados que você aplica aos
+          alunos para coletar informações ao longo do acompanhamento. Use
+          o <strong>construtor visual</strong> para montar perguntas sem
+          escrever código.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Ação</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Criar / editar / excluir</td><td class="yes">✓</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td>Visualizar pré-visualização</td><td class="yes">✓</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          </tbody>
+        </table>
+
+        <h2>1. Acessar a lista de questionários</h2>
+        <p>
+          No menu, abra <strong>Cadastros → Questionários</strong>. A lista
+          mostra cada questionário com a quantidade de campos e a data de
+          criação.
+        </p>
+        <figure>
+          <img src="../assets/images/06-questionarios-lista.png" alt="Lista de questionários" />
+          <figcaption>Lista de questionários disponíveis.</figcaption>
+        </figure>
+
+        <h2>2. Criar um novo questionário</h2>
+        <ol class="steps">
+          <li>
+            <h3>Clicar em "Novo Questionário"</h3>
+            <p>Abre o construtor visual em branco com apenas o nome.</p>
+            <figure>
+              <img src="../assets/images/06-questionarios-novo-vazio.png" alt="Construtor visual em branco" />
+              <figcaption>Construtor visual pronto para receber campos.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Dar um nome ao questionário</h3>
+            <p>
+              Escolha um nome claro como
+              "<em>Avaliação Semestral</em>" ou
+              "<em>Feedback de Estágio</em>". Esse nome aparece para quem
+              for responder.
+            </p>
+          </li>
+          <li>
+            <h3>Adicionar campos</h3>
+            <p>
+              Clique em <strong>"+ Adicionar Campo"</strong>. Selecione o
+              tipo de campo:
+            </p>
+            <ul>
+              <li><strong>Texto</strong> — resposta curta de uma linha.</li>
+              <li><strong>Área de Texto</strong> — resposta longa.</li>
+              <li><strong>Seleção Única</strong> — dropdown com opções.</li>
+              <li><strong>Seleção Múltipla</strong> — caixas para marcar.</li>
+              <li><strong>Opção Única</strong> — radio buttons.</li>
+            </ul>
+            <figure>
+              <img src="../assets/images/06-questionarios-add-campo.png" alt="Modal para escolher o tipo de campo" />
+              <figcaption>Tipos de campo disponíveis no construtor.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Configurar cada campo</h3>
+            <p>
+              Defina o <strong>rótulo</strong>, o <strong>placeholder</strong>
+              (texto de ajuda) e marque se é <strong>obrigatório</strong>. Para
+              campos de seleção, adicione as opções uma a uma.
+            </p>
+            <figure>
+              <img src="../assets/images/06-questionarios-construtor.png" alt="Construtor visual com vários campos configurados" />
+              <figcaption>Construtor com 3 campos de tipos diferentes.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Reordenar e remover</h3>
+            <p>
+              Use as setas para subir ou descer um campo na lista, e o
+              ícone de lixeira para removê-lo.
+            </p>
+          </li>
+          <li>
+            <h3>Pré-visualizar</h3>
+            <p>
+              Clique no ícone de <strong>olho</strong> para abrir a
+              pré-visualização do questionário como o aluno verá.
+            </p>
+            <figure>
+              <img src="../assets/images/06-questionarios-preview.png" alt="Pré-visualização do questionário" />
+              <figcaption>Como o questionário aparece para quem vai responder.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Salvar</h3>
+            <p>
+              Clique em <strong>Salvar</strong>. O questionário fica
+              disponível para ser respondido em
+              <a href="07-responder.html">Responder questionários</a>.
+            </p>
+          </li>
+        </ol>
+
+        <h2>3. Editor JSON (avançado)</h2>
+        <p>
+          Para casos avançados, é possível alternar para a aba
+          <strong>JSON</strong> e editar diretamente a estrutura do
+          questionário. Erros de sintaxe são exibidos abaixo do editor.
+        </p>
+        <figure>
+          <img src="../assets/images/06-questionarios-json.png" alt="Editor JSON do questionário" />
+          <figcaption>Aba JSON com o esquema do questionário.</figcaption>
+        </figure>
+
+        <div class="callout warn">
+          <strong>Atenção</strong>
+          <p>
+            Alterar um questionário que <em>já tem respostas</em> pode
+            quebrar a leitura dessas respostas. Quando precisar mudar muito,
+            prefira <strong>criar um novo</strong>.
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="05-funcionarios.html">Funcionários</a>
+          <a class="next" href="07-responder.html">Responder questionários</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

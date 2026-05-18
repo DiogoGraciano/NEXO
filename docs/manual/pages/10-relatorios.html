@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Relatórios — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Relatórios</p>
+        <h1>Relatórios em PDF</h1>
+        <p class="lead">
+          Cada cadastro do NEXO oferece um botão de
+          <strong>relatório</strong> que gera um PDF pronto para imprimir
+          ou enviar. O acesso a cada relatório acompanha a permissão da
+          lista correspondente.
+        </p>
+
+        <h2>Como gerar um relatório</h2>
+        <ol class="steps">
+          <li>
+            <h3>Abrir a lista correspondente</h3>
+            <p>
+              Acesse a lista — por exemplo,
+              <a href="03-alunos.html">Alunos</a>,
+              <a href="04-empresas.html">Empresas</a> ou
+              <a href="08-respostas.html">Respostas</a>.
+            </p>
+          </li>
+          <li>
+            <h3>Clicar no botão de relatório</h3>
+            <p>
+              O ícone de <strong>nuvem com seta para baixo</strong> fica no
+              canto superior da lista. Ele abre um modal com as opções
+              disponíveis de relatório.
+            </p>
+            <figure>
+              <img src="../assets/images/10-relatorios-modal-alunos.png" alt="Modal de relatório de alunos" />
+              <figcaption>Modal de relatórios da lista de Alunos.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/images/10-relatorios-modal-empresas.png" alt="Modal de relatório de empresas" />
+              <figcaption>Modal de relatórios da lista de Empresas.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/images/10-relatorios-modal-funcionarios.png" alt="Modal de relatório de funcionários" />
+              <figcaption>Modal de relatórios da lista de Funcionários.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/images/10-relatorios-modal-respostas.png" alt="Modal de relatório de respostas" />
+              <figcaption>Modal de relatórios da lista de Respostas.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Escolher o tipo de relatório</h3>
+            <p>
+              Cada lista oferece opções específicas — por exemplo, no
+              cadastro de empresas você pode gerar a lista completa ou
+              agrupada por estado.
+            </p>
+          </li>
+          <li>
+            <h3>Baixar o PDF</h3>
+            <p>
+              Clique em <strong>"Gerar Relatório"</strong>. O PDF é baixado
+              automaticamente pelo navegador.
+            </p>
+          </li>
+        </ol>
+
+        <div class="callout tip">
+          <strong>Dica</strong>
+          <p>
+            Use a <strong>busca</strong> ou os <strong>filtros</strong> da
+            lista antes de gerar o relatório: o PDF respeita o que estiver
+            sendo exibido na tela.
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="09-agenda.html">Agenda</a>
+          <a class="next" href="11-smtp.html">Configuração SMTP</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

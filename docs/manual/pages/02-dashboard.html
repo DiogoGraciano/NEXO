@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Dashboard</p>
+        <h1>Dashboard</h1>
+        <p class="lead">
+          O Dashboard é a tela inicial do NEXO. Reúne os principais
+          indicadores, gráficos e atalhos para criar novos cadastros.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Permissão</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Visualizar dashboard</td>
+              <td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>O que aparece na tela</h2>
+        <figure>
+          <img src="../assets/images/02-dashboard-completo.png" alt="Tela completa do Dashboard com KPIs e gráficos" />
+          <figcaption>Dashboard com dados de exemplo.</figcaption>
+        </figure>
+
+        <h3>Indicadores (KPIs)</h3>
+        <ul>
+          <li><strong>Total de Alunos</strong> — quantidade de alunos cadastrados.</li>
+          <li><strong>Alunos Colocados</strong> — alunos com pelo menos um encaminhamento ativo.</li>
+          <li><strong>Empresas Parceiras</strong> — quantas empresas estão no sistema.</li>
+          <li><strong>Encaminhamentos Ativos</strong> — vínculos sem data de desligamento.</li>
+          <li><strong>Respostas Recebidas</strong> — total de respostas de questionários.</li>
+          <li><strong>Eventos Próximos</strong> — eventos da agenda nos próximos dias.</li>
+        </ul>
+
+        <h3>Gráficos</h3>
+        <ul>
+          <li><strong>Colocação</strong> — proporção de alunos colocados vs. não colocados.</li>
+          <li><strong>Tendência</strong> — evolução nos últimos 12 meses.</li>
+          <li><strong>Top empresas</strong> — empresas com mais encaminhamentos.</li>
+          <li><strong>Alunos por estado</strong> — distribuição geográfica.</li>
+          <li><strong>Eventos por tipo</strong> — visitas, avaliações, reuniões etc.</li>
+          <li><strong>Respostas por questionário</strong> — engajamento por formulário.</li>
+        </ul>
+
+        <h3>Alerta de encaminhamentos terminando</h3>
+        <p>
+          Quando há encaminhamentos previstos para se encerrar nos próximos
+          30 dias, um <strong>aviso amarelo</strong> aparece no topo do
+          dashboard listando os alunos afetados.
+        </p>
+        <figure>
+          <img src="../assets/images/02-dashboard-alerta.png" alt="Alerta de encaminhamentos terminando em breve" />
+          <figcaption>Use o alerta para renovar contratos a tempo.</figcaption>
+        </figure>
+
+        <h3>Atividade recente e atalhos</h3>
+        <p>
+          No rodapé da página estão a tabela de
+          <strong>atividade recente</strong> (últimos encaminhamentos
+          criados) e três cartões de <strong>ação rápida</strong> que
+          levam diretamente para os cadastros mais usados:
+        </p>
+        <ul>
+          <li>Novo Aluno → <a href="03-alunos.html">cadastro de aluno</a></li>
+          <li>Nova Empresa → <a href="04-empresas.html">cadastro de empresa</a></li>
+          <li>Novo Funcionário → <a href="05-funcionarios.html">cadastro de funcionário</a> (apenas ADM/RH)</li>
+        </ul>
+
+        <div class="callout tip">
+          <strong>Dica</strong>
+          <p>
+            Clique em qualquer indicador para ir direto para a lista
+            correspondente já filtrada (quando aplicável).
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="01-acesso.html">Acesso</a>
+          <a class="next" href="03-alunos.html">Alunos</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

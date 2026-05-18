@@ -15,6 +15,7 @@
     "e2e:ui": "playwright test --ui",
     "e2e:report": "playwright show-report",
     "e2e:install": "playwright install chromium",
+    "manual:capture": "playwright test --config=playwright.manual.config.ts",
     "json-server": "json-server --watch db.json --port 8000",
     "api": "json-server --watch db.json --port 3000",
     "generate-pwa-assets": "pwa-assets-generator --config pwa-assets.config.ts"

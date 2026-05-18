@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manual do Usuário — NEXO</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+
+        <nav>
+          <h2>Início</h2>
+          <ul>
+            <li><a href="index.html">Visão geral</a></li>
+          </ul>
+
+          <h2>Acesso</h2>
+          <ul>
+            <li><a href="pages/01-acesso.html">Login &amp; senha</a></li>
+          </ul>
+
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="pages/02-dashboard.html">Dashboard</a></li>
+            <li><a href="pages/03-alunos.html">Alunos</a></li>
+            <li><a href="pages/04-empresas.html">Empresas</a></li>
+            <li><a href="pages/09-agenda.html">Agenda</a></li>
+          </ul>
+
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="pages/06-questionarios.html">Questionários</a></li>
+            <li><a href="pages/07-responder.html">Responder questionários</a></li>
+            <li><a href="pages/08-respostas.html">Ver respostas</a></li>
+          </ul>
+
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="pages/05-funcionarios.html">Funcionários</a></li>
+            <li><a href="pages/10-relatorios.html">Relatórios</a></li>
+            <li><a href="pages/11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <h1>Manual do Usuário NEXO</h1>
+        <p class="lead">
+          Bem-vindo ao manual oficial do <strong>NEXO — Sistema de
+          Acompanhamento Acadêmico e Profissional</strong>. Este guia mostra,
+          passo a passo e com capturas reais de tela, como executar cada tarefa
+          no sistema.
+        </p>
+
+        <h2>O que é o NEXO?</h2>
+        <p>
+          O NEXO acompanha a trajetória acadêmica e profissional dos alunos
+          desde o cadastro até o encaminhamento para o mercado de trabalho.
+          Permite a gestão de empresas parceiras, registro de funcionários,
+          aplicação de questionários, agendamento de eventos e geração de
+          relatórios em PDF.
+        </p>
+
+        <h2>Perfis de acesso</h2>
+        <p>
+          O acesso ao sistema é controlado por <strong>cargo (função)</strong>.
+          Cada cargo libera um conjunto diferente de telas e ações:
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr>
+              <th>Funcionalidade</th>
+              <th>ADM</th>
+              <th>RH</th>
+              <th>COORD</th>
+              <th>PROF</th>
+              <th>DIR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dashboard</td>
+              <td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Cadastro de alunos</td>
+              <td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Cadastro de empresas</td>
+              <td class="yes">✓</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td>
+            </tr>
+            <tr>
+              <td>Cadastro de funcionários</td>
+              <td class="yes">✓</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td>
+            </tr>
+            <tr>
+              <td>Questionários (criar/editar)</td>
+              <td class="yes">✓</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Responder questionários</td>
+              <td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Agenda</td>
+              <td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Configuração de SMTP</td>
+              <td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          A imagem abaixo mostra o menu lateral visto pelo
+          <strong>Administrador</strong> e por um <strong>Professor</strong>:
+          o cabeçalho identifica o usuário logado e os itens são os mesmos
+          para todos os perfis — quando um usuário sem permissão tenta abrir
+          um item restrito, o sistema exibe uma página de
+          <em>"acesso negado"</em>.
+        </p>
+        <figure>
+          <img
+            src="assets/images/00-sidebar-comparacao.png"
+            alt="Menu lateral visto pelo Administrador e pelo Professor"
+          />
+          <figcaption>
+            Mesma navegação para os dois perfis; o que muda é a identidade
+            no topo e as permissões aplicadas em cada tela.
+          </figcaption>
+        </figure>
+
+        <h2>Por onde começar</h2>
+        <div class="card-grid">
+          <a class="card" href="pages/01-acesso.html">
+            <h3>1. Acesso</h3>
+            <p>Como entrar, recuperar e redefinir sua senha.</p>
+          </a>
+          <a class="card" href="pages/02-dashboard.html">
+            <h3>2. Dashboard</h3>
+            <p>Indicadores, gráficos e atalhos da tela inicial.</p>
+          </a>
+          <a class="card" href="pages/03-alunos.html">
+            <h3>3. Alunos</h3>
+            <p>Cadastrar, editar e encaminhar alunos para empresas.</p>
+          </a>
+          <a class="card" href="pages/04-empresas.html">
+            <h3>4. Empresas</h3>
+            <p>Manter o cadastro de empresas parceiras.</p>
+          </a>
+          <a class="card" href="pages/05-funcionarios.html">
+            <h3>5. Funcionários</h3>
+            <p>Gerenciar usuários do sistema e seus cargos (ADM/RH).</p>
+          </a>
+          <a class="card" href="pages/06-questionarios.html">
+            <h3>6. Questionários</h3>
+            <p>Montar questionários no construtor visual.</p>
+          </a>
+          <a class="card" href="pages/07-responder.html">
+            <h3>7. Responder</h3>
+            <p>Aplicar um questionário para um aluno.</p>
+          </a>
+          <a class="card" href="pages/08-respostas.html">
+            <h3>8. Respostas</h3>
+            <p>Consultar respostas por questionário ou por aluno.</p>
+          </a>
+          <a class="card" href="pages/09-agenda.html">
+            <h3>9. Agenda</h3>
+            <p>Agendar visitas, avaliações e reuniões.</p>
+          </a>
+          <a class="card" href="pages/10-relatorios.html">
+            <h3>10. Relatórios</h3>
+            <p>Gerar e baixar relatórios em PDF.</p>
+          </a>
+          <a class="card" href="pages/11-smtp.html">
+            <h3>11. SMTP</h3>
+            <p>Configurar o servidor de e-mail (ADM).</p>
+          </a>
+        </div>
+
+        <div class="callout tip">
+          <strong>Dica</strong>
+          <p>
+            Use o menu lateral à esquerda para navegar a qualquer momento. Em
+            telas pequenas (celular/tablet), toque no ícone <code>☰</code> no
+            canto superior esquerdo.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="assets/sidebar.js"></script>
+  </body>
+</html>

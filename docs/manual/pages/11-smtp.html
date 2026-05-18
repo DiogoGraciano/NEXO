@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Configuração SMTP — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Configuração › SMTP</p>
+        <h1>Configuração de SMTP</h1>
+        <p class="lead">
+          A configuração de SMTP define o servidor de e-mail usado pelo
+          NEXO para enviar notificações como o link de redefinição de senha.
+          Apenas o <strong>Administrador</strong> tem acesso a esta tela.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Ação</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Configurar SMTP</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+          </tbody>
+        </table>
+
+        <h2>1. Abrir a configuração</h2>
+        <p>
+          No menu, abra <strong>Configurações → SMTP</strong>.
+        </p>
+        <figure>
+          <img src="../assets/images/11-smtp-vazio.png" alt="Tela de configuração SMTP vazia" />
+          <figcaption>Tela de configuração de SMTP.</figcaption>
+        </figure>
+
+        <h2>2. Preencher os dados do servidor</h2>
+        <ol class="steps">
+          <li>
+            <h3>Host e porta</h3>
+            <p>
+              Informe o <strong>Host</strong> (por exemplo
+              <code>smtp.gmail.com</code>) e a <strong>Porta</strong>
+              (geralmente <code>587</code> para TLS ou <code>465</code> para
+              SSL).
+            </p>
+          </li>
+          <li>
+            <h3>Marcar "Secure" quando aplicável</h3>
+            <p>
+              Marque a caixa <strong>Secure</strong> apenas se sua porta
+              exigir SSL (normalmente a 465).
+            </p>
+          </li>
+          <li>
+            <h3>Usuário e senha</h3>
+            <p>
+              Informe o usuário (e-mail) e a senha do servidor SMTP. Use o
+              botão do olho para mostrar/ocultar a senha enquanto digita.
+            </p>
+          </li>
+          <li>
+            <h3>Remetente</h3>
+            <p>
+              Preencha o <strong>e-mail "De"</strong> e, opcionalmente, o
+              <strong>nome "De"</strong> — esses campos aparecem para quem
+              recebe os e-mails do NEXO.
+            </p>
+            <figure>
+              <img src="../assets/images/11-smtp-preenchido.png" alt="Configuração SMTP preenchida" />
+              <figcaption>Configuração pronta para teste.</figcaption>
+            </figure>
+          </li>
+        </ol>
+
+        <h2>3. Testar e salvar</h2>
+        <p>
+          Antes de salvar, clique em <strong>Testar Conexão</strong>. O
+          sistema tenta conectar e mostra o resultado no topo:
+        </p>
+        <figure>
+          <img src="../assets/images/11-smtp-teste-ok.png" alt="Mensagem de teste de conexão bem-sucedido" />
+          <figcaption>Teste com sucesso.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/11-smtp-teste-erro.png" alt="Mensagem de erro no teste de conexão" />
+          <figcaption>Erro no teste — credenciais ou rede.</figcaption>
+        </figure>
+
+        <p>
+          Com o teste OK, clique em <strong>Salvar Configuração</strong>.
+        </p>
+
+        <div class="callout warn">
+          <strong>Atenção</strong>
+          <p>
+            Para o Gmail, é preciso gerar uma
+            <strong>senha de aplicativo</strong> em vez de usar a senha
+            normal da conta. Sem isso, o teste falhará com erro de
+            autenticação.
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="10-relatorios.html">Relatórios</a>
+          <a class="next" href="../index.html">Voltar à visão geral</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

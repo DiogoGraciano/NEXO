@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responder questionários — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Acompanhamentos › Responder</p>
+        <h1>Responder questionários</h1>
+        <p class="lead">
+          Aqui você aplica um questionário já criado (veja
+          <a href="06-questionarios.html">Questionários</a>) e envia a
+          resposta para um aluno.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Ação</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Responder questionário</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          </tbody>
+        </table>
+
+        <h2>1. Abrir a lista de questionários</h2>
+        <p>
+          No menu lateral, abra
+          <strong>Acompanhamentos → Responder Questionários</strong>. A lista
+          mostra todos os questionários disponíveis para responder.
+        </p>
+        <figure>
+          <img src="../assets/images/07-responder-lista.png" alt="Lista de questionários a responder" />
+          <figcaption>Lista de questionários ativos.</figcaption>
+        </figure>
+
+        <h2>2. Selecionar um questionário</h2>
+        <ol class="steps">
+          <li>
+            <h3>Clicar em "Responder"</h3>
+            <p>
+              Na linha do questionário desejado, clique no botão
+              <strong>"Responder"</strong> (ícone de seta).
+            </p>
+          </li>
+          <li>
+            <h3>Selecionar o aluno</h3>
+            <p>
+              No topo do formulário, escolha o
+              <strong>aluno</strong> que está respondendo (ou para quem você
+              está preenchendo).
+            </p>
+            <figure>
+              <img src="../assets/images/07-responder-form.png" alt="Formulário do questionário com seleção de aluno" />
+              <figcaption>Formulário com aluno selecionado e campos prontos.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Preencher as respostas</h3>
+            <p>
+              Responda cada campo conforme o tipo definido pelo construtor
+              do questionário (texto, opções, marcações etc.).
+            </p>
+          </li>
+          <li>
+            <h3>Enviar</h3>
+            <p>
+              Clique em <strong>Enviar Resposta</strong>. Caso falte algum
+              campo obrigatório, o sistema destaca o erro:
+            </p>
+            <figure>
+              <img src="../assets/images/07-responder-erro.png" alt="Formulário mostrando erro em campo obrigatório" />
+              <figcaption>Erro de validação em campo obrigatório.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Confirmação</h3>
+            <p>
+              Após o envio, aparece a tela de confirmação e você é
+              redirecionado automaticamente para a lista.
+            </p>
+            <figure>
+              <img src="../assets/images/07-responder-sucesso.png" alt="Tela de sucesso após enviar resposta" />
+              <figcaption>Resposta enviada com sucesso.</figcaption>
+            </figure>
+          </li>
+        </ol>
+
+        <div class="callout tip">
+          <strong>Dica</strong>
+          <p>
+            As respostas enviadas ficam disponíveis na seção
+            <a href="08-respostas.html">Ver respostas</a>, tanto agrupadas
+            por questionário quanto por aluno.
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="06-questionarios.html">Questionários</a>
+          <a class="next" href="08-respostas.html">Ver respostas</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

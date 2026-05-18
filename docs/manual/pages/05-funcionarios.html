@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Funcionários — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Cadastros › Funcionários</p>
+        <h1>Funcionários</h1>
+        <p class="lead">
+          Funcionários são os usuários que acessam o sistema. Cada um tem um
+          <strong>cargo (função)</strong> que define o que pode ver e fazer.
+          Apenas ADM e RH têm acesso a esta tela.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Ação</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Listar funcionários</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+            <tr><td>Criar / editar / excluir</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+          </tbody>
+        </table>
+
+        <h2>1. Acessar a lista</h2>
+        <p>
+          No menu, abra <strong>Cadastros → Funcionários</strong>. A lista
+          mostra nome, e-mail, CPF, função e telefone. Use o filtro
+          <strong>"Função"</strong> para ver apenas um cargo de cada vez
+          (ADM, RH, COORD, PROF ou DIR).
+        </p>
+        <figure>
+          <img src="../assets/images/05-funcionarios-lista.png" alt="Lista de funcionários" />
+          <figcaption>Lista com filtro por função.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/05-funcionarios-filtro.png" alt="Lista filtrada por função" />
+          <figcaption>Lista filtrada apenas para a função "PROF".</figcaption>
+        </figure>
+
+        <h2>2. Cadastrar um novo funcionário</h2>
+        <ol class="steps">
+          <li>
+            <h3>Clicar em "Novo Funcionário"</h3>
+            <p>
+              Abre o formulário com os campos pessoais, endereço, cargo e
+              <strong>senha</strong>.
+            </p>
+            <figure>
+              <img src="../assets/images/05-funcionarios-novo-vazio.png" alt="Formulário de novo funcionário em branco" />
+              <figcaption>Formulário em branco com campo de senha.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Preencher dados pessoais e endereço</h3>
+            <p>
+              Nome, e-mail (usado para login), telefone, CPF e endereço
+              (com busca automática por CEP).
+            </p>
+          </li>
+          <li>
+            <h3>Escolher a função</h3>
+            <p>
+              Selecione a <strong>função</strong> que define as permissões:
+              ADM, RH, COORD, PROF ou DIR. A tabela de permissões está na
+              <a href="../index.html">visão geral</a> do manual.
+            </p>
+          </li>
+          <li>
+            <h3>Definir a senha inicial</h3>
+            <p>
+              Digite a senha e repita no campo <strong>Confirmar Senha</strong>.
+              O usuário poderá alterá-la depois usando "Esqueci minha senha"
+              (veja <a href="01-acesso.html">Acesso</a>).
+            </p>
+            <figure>
+              <img src="../assets/images/05-funcionarios-novo-preenchido.png" alt="Formulário de novo funcionário preenchido" />
+              <figcaption>Cadastro completo, pronto para salvar.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Salvar</h3>
+            <p>Clique em <strong>Salvar</strong>. O novo usuário já pode entrar.</p>
+          </li>
+        </ol>
+
+        <h2>3. Editar um funcionário</h2>
+        <p>
+          Ao editar, os campos de <strong>senha são opcionais</strong>:
+          deixe em branco para preservar a senha atual; preencha para
+          definir uma nova.
+        </p>
+        <figure>
+          <img src="../assets/images/05-funcionarios-editar.png" alt="Tela de edição de funcionário, senha em branco" />
+          <figcaption>Edição com a senha em branco preserva a atual.</figcaption>
+        </figure>
+
+        <div class="callout warn">
+          <strong>Atenção</strong>
+          <p>
+            Não exclua o próprio usuário enquanto estiver logado nele. Use
+            sempre outro administrador para fazer a exclusão.
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="04-empresas.html">Empresas</a>
+          <a class="next" href="06-questionarios.html">Questionários</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

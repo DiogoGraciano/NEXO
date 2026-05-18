@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ver respostas — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Acompanhamentos › Respostas</p>
+        <h1>Ver respostas</h1>
+        <p class="lead">
+          Consulte as respostas dos questionários agrupadas por
+          <strong>questionário</strong> ou por <strong>aluno</strong>.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Ação</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Visualizar respostas</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          </tbody>
+        </table>
+
+        <h2>1. Visão por questionário</h2>
+        <p>
+          No menu, abra
+          <strong>Acompanhamentos → Respostas de Questionários</strong>.
+          Selecione um questionário no campo do topo para ver todas as
+          respostas recebidas.
+        </p>
+        <figure>
+          <img src="../assets/images/08-respostas-seletor.png" alt="Página de respostas com seletor de questionário" />
+          <figcaption>Selecione o questionário para listar as respostas.</figcaption>
+        </figure>
+
+        <h3>Estatísticas</h3>
+        <p>
+          Logo abaixo do seletor aparecem os indicadores de
+          <strong>total de respostas</strong>, <strong>respostas recentes</strong>
+          e <strong>taxa de conclusão</strong> do questionário selecionado.
+          Use o ícone de seta ao lado do título para expandir mais detalhes.
+        </p>
+
+        <h3>Lista de respostas</h3>
+        <p>
+          A tabela mostra o aluno, a data/hora do envio e o status. Use a
+          busca para filtrar por nome ou e-mail.
+        </p>
+        <figure>
+          <img src="../assets/images/08-respostas-tabela.png" alt="Tabela de respostas filtradas" />
+          <figcaption>Lista de respostas para o questionário.</figcaption>
+        </figure>
+
+        <h3>Ver uma resposta detalhada</h3>
+        <p>
+          Clique no ícone de <strong>olho</strong> em qualquer linha para
+          abrir a resposta completa em uma janela.
+        </p>
+        <figure>
+          <img src="../assets/images/08-respostas-detalhe.png" alt="Modal com detalhes de uma resposta" />
+          <figcaption>Resposta detalhada de um aluno.</figcaption>
+        </figure>
+
+        <h2>2. Visão por aluno</h2>
+        <p>
+          Na <a href="03-alunos.html">lista de alunos</a>, abra a página de
+          respostas do aluno clicando em
+          <strong>"Respostas do aluno"</strong>. Lá você vê o histórico de
+          todos os questionários que esse aluno respondeu.
+        </p>
+        <figure>
+          <img src="../assets/images/08-respostas-por-aluno.png" alt="Página de respostas de um aluno específico" />
+          <figcaption>Histórico de respostas de um aluno.</figcaption>
+        </figure>
+
+        <div class="callout tip">
+          <strong>Dica</strong>
+          <p>
+            Para extrair todas as respostas em PDF, use o botão de
+            <strong>relatório</strong> no topo da página (veja
+            <a href="10-relatorios.html">Relatórios</a>).
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="07-responder.html">Responder</a>
+          <a class="next" href="09-agenda.html">Agenda</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

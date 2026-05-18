@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Empresas — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Cadastros › Empresas</p>
+        <h1>Empresas</h1>
+        <p class="lead">
+          O cadastro de empresas reúne todas as parceiras que podem receber
+          encaminhamentos de alunos. Manter essas informações atualizadas
+          mantém também os relatórios e o dashboard confiáveis.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Ação</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Listar empresas</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+            <tr><td>Criar / editar / excluir</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+          </tbody>
+        </table>
+
+        <h2>1. Acessar a lista</h2>
+        <p>
+          No menu lateral, abra <strong>Cadastros → Empresas</strong>. A lista
+          mostra Razão Social, CNPJ, cidade e estado.
+        </p>
+        <figure>
+          <img src="../assets/images/04-empresas-lista.png" alt="Lista de empresas cadastradas" />
+          <figcaption>Lista com busca e ações em cada linha.</figcaption>
+        </figure>
+
+        <h2>2. Cadastrar uma nova empresa</h2>
+        <ol class="steps">
+          <li>
+            <h3>Clicar em "Nova Empresa"</h3>
+            <p>Abre um formulário com Razão Social, CNPJ e endereço.</p>
+            <figure>
+              <img src="../assets/images/04-empresas-novo-vazio.png" alt="Formulário de nova empresa em branco" />
+              <figcaption>Formulário em branco.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Preencher Razão Social e CNPJ</h3>
+            <p>
+              O <strong>CNPJ</strong> é formatado automaticamente
+              (<code>00.000.000/0000-00</code>) e validado antes de salvar.
+            </p>
+            <figure>
+              <img src="../assets/images/04-empresas-novo-preenchido.png" alt="Formulário de empresa preenchido" />
+              <figcaption>CNPJ com máscara aplicada.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Preencher o endereço</h3>
+            <p>
+              Comece pelo <strong>CEP</strong> — cidade, estado e bairro
+              são preenchidos automaticamente quando o CEP é encontrado.
+            </p>
+          </li>
+          <li>
+            <h3>Salvar</h3>
+            <p>
+              Clique em <strong>Salvar</strong>. A empresa aparece na lista e
+              já pode ser referenciada em encaminhamentos de alunos
+              (veja <a href="03-alunos.html">Alunos</a>).
+            </p>
+          </li>
+        </ol>
+
+        <h2>3. Editar e excluir</h2>
+        <p>
+          As ações ficam à direita de cada linha. A exclusão é definitiva e
+          é bloqueada caso a empresa esteja vinculada a encaminhamentos.
+        </p>
+
+        <div class="callout warn">
+          <strong>Atenção</strong>
+          <p>
+            CNPJ é único. Antes de cadastrar, use a busca para verificar se
+            a empresa já existe.
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="03-alunos.html">Alunos</a>
+          <a class="next" href="05-funcionarios.html">Funcionários</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

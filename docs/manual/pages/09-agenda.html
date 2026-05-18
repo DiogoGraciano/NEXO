@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenda — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Agenda</p>
+        <h1>Agenda</h1>
+        <p class="lead">
+          A agenda do NEXO usa um calendário visual para registrar
+          <strong>visitas, avaliações, reuniões</strong> e outros eventos
+          relacionados a alunos e empresas.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Ação</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Visualizar agenda</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td>Criar / editar / excluir evento</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          </tbody>
+        </table>
+
+        <h2>1. Abrir a agenda</h2>
+        <p>
+          No menu, abra <strong>Agenda → Agendamentos</strong>. O calendário
+          abre no modo <strong>mês</strong>; use os botões superiores para
+          alternar entre <strong>mês</strong>, <strong>semana</strong> e
+          <strong>dia</strong>.
+        </p>
+        <figure>
+          <img src="../assets/images/09-agenda-mes.png" alt="Calendário no modo mês com vários eventos" />
+          <figcaption>Calendário mensal com eventos coloridos por tipo.</figcaption>
+        </figure>
+
+        <h2>2. Criar um novo evento</h2>
+        <ol class="steps">
+          <li>
+            <h3>Clicar em um dia (ou horário)</h3>
+            <p>
+              No modo mês, clique em uma data. Nos modos semana/dia, arraste
+              o cursor para selecionar a faixa de horário desejada.
+            </p>
+          </li>
+          <li>
+            <h3>Preencher os dados do evento</h3>
+            <p>
+              Preencha o <strong>Título</strong>, escolha o
+              <strong>tipo</strong> (visita, avaliação, reunião ou genérico)
+              e ajuste as datas de <strong>início</strong> e
+              <strong>fim</strong>. Vincule um <strong>aluno</strong> e/ou
+              uma <strong>empresa</strong> se aplicável.
+            </p>
+            <figure>
+              <img src="../assets/images/09-agenda-novo.png" alt="Modal de criação de evento" />
+              <figcaption>Modal de evento com tipo e vínculos.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Salvar</h3>
+            <p>
+              Clique em <strong>Salvar</strong>. O evento aparece no
+              calendário com a cor correspondente ao seu tipo.
+            </p>
+          </li>
+        </ol>
+
+        <h2>3. Editar ou apagar um evento</h2>
+        <p>
+          Clique sobre o evento no calendário para abrir o modal de edição.
+          Faça as alterações e clique em <strong>Salvar</strong>, ou em
+          <strong>Deletar</strong> para removê-lo.
+        </p>
+
+        <h2>4. Criar evento a partir de um aluno</h2>
+        <p>
+          Na <a href="03-alunos.html">lista de alunos</a>, o ícone de
+          <strong>calendário</strong> na linha do aluno pré-preenche um
+          evento já vinculado a ele (útil para visitas e avaliações).
+        </p>
+        <figure>
+          <img src="../assets/images/09-agenda-evento-aluno.png" alt="Modal de evento criado a partir de um aluno" />
+          <figcaption>Evento com aluno e tipo já preenchidos.</figcaption>
+        </figure>
+
+        <div class="callout tip">
+          <strong>Dica</strong>
+          <p>
+            Cada tipo de evento tem uma cor própria, facilitando uma leitura
+            rápida do calendário. Os eventos próximos também aparecem no
+            <a href="02-dashboard.html">Dashboard</a>.
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="08-respostas.html">Ver respostas</a>
+          <a class="next" href="10-relatorios.html">Relatórios</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

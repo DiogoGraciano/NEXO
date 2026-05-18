@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alunos — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Cadastros › Alunos</p>
+        <h1>Alunos</h1>
+        <p class="lead">
+          O cadastro de alunos é a base do NEXO. A partir dele você acompanha
+          a trajetória do estudante, registra encaminhamentos para empresas
+          e aplica questionários.
+        </p>
+
+        <table class="perm-table">
+          <thead>
+            <tr><th>Ação</th><th>ADM</th><th>RH</th><th>COORD</th><th>PROF</th><th>DIR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Listar alunos</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td>Criar / editar / excluir</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td>Gerenciar encaminhamentos</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          </tbody>
+        </table>
+
+        <h2>1. Acessar a lista de alunos</h2>
+        <p>
+          No menu lateral, abra <strong>Cadastros → Alunos / Usuários</strong>.
+          Você verá a lista com nome, CPF, e-mail, telefone, cidade e a
+          quantidade de encaminhamentos de cada aluno.
+        </p>
+        <figure>
+          <img src="../assets/images/03-alunos-lista.png" alt="Lista de alunos com tabela e barra de busca" />
+          <figcaption>Lista de alunos cadastrados.</figcaption>
+        </figure>
+
+        <p>
+          Use a barra de busca para filtrar por <strong>nome, e-mail ou
+          CPF</strong>. A pesquisa atualiza a lista enquanto você digita.
+        </p>
+        <figure>
+          <img src="../assets/images/03-alunos-busca.png" alt="Lista de alunos filtrada por uma busca" />
+          <figcaption>Busca em tempo real por nome, e-mail ou CPF.</figcaption>
+        </figure>
+
+        <h2>2. Cadastrar um novo aluno</h2>
+        <ol class="steps">
+          <li>
+            <h3>Clicar em "Novo Aluno"</h3>
+            <p>O botão azul fica no canto superior direito da lista.</p>
+            <figure>
+              <img src="../assets/images/03-alunos-novo-vazio.png" alt="Modal de cadastro de novo aluno em branco" />
+              <figcaption>Formulário em branco aguardando preenchimento.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Preencher os dados pessoais</h3>
+            <p>
+              <strong>Nome completo</strong>, <strong>e-mail</strong>,
+              <strong>telefone</strong> e <strong>CPF</strong>. O CPF é
+              formatado automaticamente conforme você digita.
+            </p>
+          </li>
+          <li>
+            <h3>Preencher o endereço</h3>
+            <p>
+              Comece pelo <strong>CEP</strong> — o sistema busca cidade,
+              estado e bairro automaticamente. Complete com
+              <strong>número</strong> e <strong>complemento</strong>.
+            </p>
+            <figure>
+              <img src="../assets/images/03-alunos-novo-preenchido.png" alt="Modal de cadastro de aluno com todos os campos preenchidos" />
+              <figcaption>Cadastro com CEP buscado automaticamente.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Informar matrícula e responsável</h3>
+            <p>
+              Os campos <strong>Código</strong> (matrícula) e
+              <strong>Responsável</strong> são obrigatórios. Use o campo
+              <strong>Observação</strong> para notas livres sobre o aluno.
+            </p>
+          </li>
+          <li>
+            <h3>Salvar</h3>
+            <p>
+              Clique em <strong>Salvar</strong>. O aluno aparece imediatamente
+              na lista. Para cancelar sem salvar, use o botão
+              <strong>Cancelar</strong>.
+            </p>
+          </li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>Atenção</strong>
+          <p>
+            CPF e e-mail são únicos. Se já existir um aluno com esses dados,
+            o sistema mostra uma mensagem de erro e a gravação não acontece.
+          </p>
+        </div>
+
+        <h2>3. Editar ou excluir um aluno</h2>
+        <p>
+          Na linha do aluno, clique no ícone de <strong>lápis</strong> para
+          editar ou na <strong>lixeira</strong> para excluir. A exclusão pede
+          confirmação e <strong>não pode ser desfeita</strong>.
+        </p>
+
+        <h2>4. Encaminhar o aluno para uma empresa</h2>
+        <p>
+          Um <em>encaminhamento</em> registra o vínculo do aluno com uma
+          empresa parceira (estágio, emprego, treinamento etc.).
+        </p>
+        <ol class="steps">
+          <li>
+            <h3>Abrir os encaminhamentos do aluno</h3>
+            <p>
+              Na linha do aluno, clique no ícone de
+              <strong>seta para a direita</strong>. Uma janela exibe os
+              encaminhamentos atuais.
+            </p>
+            <figure>
+              <img src="../assets/images/03-alunos-encaminhamentos.png" alt="Lista de encaminhamentos de um aluno" />
+              <figcaption>Encaminhamentos do aluno selecionado.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Clicar em "Novo Encaminhamento"</h3>
+            <p>
+              Preencha <strong>Empresa</strong>, <strong>Função</strong>,
+              <strong>data de admissão</strong> e, opcionalmente, o
+              <strong>contato de RH</strong>.
+            </p>
+            <figure>
+              <img src="../assets/images/03-alunos-novo-encaminhamento.png" alt="Formulário de novo encaminhamento" />
+              <figcaption>Cadastro de um novo encaminhamento.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Registrar o desligamento (quando houver)</h3>
+            <p>
+              Quando o aluno deixa a empresa, edite o encaminhamento e
+              preencha a <strong>Data de desligamento</strong>. Isso
+              afeta o cálculo de "alunos colocados" no
+              <a href="02-dashboard.html">Dashboard</a>.
+            </p>
+          </li>
+        </ol>
+
+        <div class="callout tip">
+          <strong>Dica</strong>
+          <p>
+            Para emitir um relatório de alunos em PDF, clique no ícone de
+            download no canto superior da lista. Veja mais em
+            <a href="10-relatorios.html">Relatórios</a>.
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="02-dashboard.html">Dashboard</a>
+          <a class="next" href="04-empresas.html">Empresas</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acesso — Manual NEXO</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <div class="sidebar-overlay"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <h1>NEXO</h1>
+        <p class="subtitle">Manual do Usuário</p>
+        <nav>
+          <h2>Início</h2>
+          <ul><li><a href="../index.html">Visão geral</a></li></ul>
+          <h2>Acesso</h2>
+          <ul><li><a href="01-acesso.html">Login &amp; senha</a></li></ul>
+          <h2>Dia a dia</h2>
+          <ul>
+            <li><a href="02-dashboard.html">Dashboard</a></li>
+            <li><a href="03-alunos.html">Alunos</a></li>
+            <li><a href="04-empresas.html">Empresas</a></li>
+            <li><a href="09-agenda.html">Agenda</a></li>
+          </ul>
+          <h2>Acompanhamentos</h2>
+          <ul>
+            <li><a href="06-questionarios.html">Questionários</a></li>
+            <li><a href="07-responder.html">Responder questionários</a></li>
+            <li><a href="08-respostas.html">Ver respostas</a></li>
+          </ul>
+          <h2>Administração</h2>
+          <ul>
+            <li><a href="05-funcionarios.html">Funcionários</a></li>
+            <li><a href="10-relatorios.html">Relatórios</a></li>
+            <li><a href="11-smtp.html">Configuração SMTP</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <p class="breadcrumb"><a href="../index.html">Manual</a> › Acesso</p>
+        <h1>Acesso ao sistema</h1>
+        <p class="lead">
+          Esta seção mostra como fazer login no NEXO e o que fazer quando você
+          esquecer sua senha.
+        </p>
+
+        <h2>1. Fazer login</h2>
+        <p>Disponível para todos os perfis com cadastro ativo de funcionário.</p>
+
+        <ol class="steps">
+          <li>
+            <h3>Abrir a tela de login</h3>
+            <p>
+              Acesse o endereço do NEXO no navegador. Você será levado à tela
+              de login automaticamente caso não esteja autenticado.
+            </p>
+            <figure>
+              <img src="../assets/images/01-login-vazio.png" alt="Tela de login do NEXO em branco" />
+              <figcaption>Tela de login inicial.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Informar e-mail e senha</h3>
+            <p>
+              Preencha seu <strong>e-mail corporativo</strong> e sua
+              <strong>senha</strong>. Use o ícone do olho à direita do campo
+              senha para mostrar ou ocultar o que está sendo digitado.
+            </p>
+            <figure>
+              <img src="../assets/images/01-login-preenchido.png" alt="Tela de login com e-mail e senha preenchidos" />
+              <figcaption>Formulário preenchido, pronto para enviar.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Clicar em "Entrar"</h3>
+            <p>
+              Em caso de sucesso, você é redirecionado para o
+              <a href="02-dashboard.html">Dashboard</a>. Em caso de erro,
+              uma mensagem em vermelho aparecerá logo acima dos campos.
+            </p>
+            <figure>
+              <img src="../assets/images/01-login-erro.png" alt="Mensagem de erro de credencial inválida" />
+              <figcaption>Quando o e-mail ou a senha estão incorretos.</figcaption>
+            </figure>
+          </li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>Atenção</strong>
+          <p>
+            Após várias tentativas falhas, peça ao Administrador para
+            verificar o cadastro do seu usuário em
+            <a href="05-funcionarios.html">Funcionários</a>.
+          </p>
+        </div>
+
+        <h2>2. Esqueci minha senha</h2>
+        <p>
+          Disponível para todos os perfis. É necessário ter acesso ao e-mail
+          cadastrado.
+        </p>
+
+        <ol class="steps">
+          <li>
+            <h3>Clicar em "Esqueceu sua senha?"</h3>
+            <p>O link fica logo abaixo do botão "Entrar" na tela de login.</p>
+            <figure>
+              <img src="../assets/images/01-forgot-vazio.png" alt="Tela 'Esqueceu sua senha?' em branco" />
+              <figcaption>Tela de solicitação de redefinição de senha.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Informar o e-mail cadastrado</h3>
+            <p>
+              Digite o mesmo e-mail que você usa para entrar no sistema e
+              clique em <strong>Enviar instruções</strong>.
+            </p>
+            <figure>
+              <img src="../assets/images/01-forgot-sucesso.png" alt="Mensagem de sucesso após pedir redefinição" />
+              <figcaption>Confirmação de envio do e-mail.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Abrir o e-mail e clicar no link</h3>
+            <p>
+              Procure o e-mail enviado pelo NEXO (verifique também a caixa
+              de spam). Clique no link de redefinição — ele é
+              <strong>válido por tempo limitado</strong>.
+            </p>
+          </li>
+          <li>
+            <h3>Definir a nova senha</h3>
+            <p>
+              Digite a nova senha (mínimo de 6 caracteres) e repita no
+              segundo campo. Clique em <strong>Redefinir Senha</strong>.
+            </p>
+            <figure>
+              <img src="../assets/images/01-reset-preenchido.png" alt="Tela de redefinição de senha preenchida" />
+              <figcaption>Defina e confirme a nova senha.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Voltar para o login</h3>
+            <p>
+              Em caso de sucesso, o sistema mostra uma confirmação verde
+              ("Senha redefinida com sucesso!") e disponibiliza o botão
+              <strong>Voltar ao Login</strong>. Use sua nova senha para entrar.
+            </p>
+          </li>
+        </ol>
+
+        <div class="callout tip">
+          <strong>Dica</strong>
+          <p>
+            Se o link de redefinição expirou ou foi usado, basta repetir o
+            processo a partir da tela "Esqueceu sua senha?".
+          </p>
+        </div>
+
+        <nav class="page-nav">
+          <a class="prev" href="../index.html">Visão geral</a>
+          <a class="next" href="02-dashboard.html">Dashboard</a>
+        </nav>
+      </main>
+    </div>
+    <script src="../assets/sidebar.js"></script>
+  </body>
+</html>
