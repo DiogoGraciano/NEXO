@@ -22,7 +22,9 @@
     "seed:run": "ts-node -r tsconfig-paths/register src/database/run-seeders.ts",
     "seed:prod": "node dist/database/run-seeders.js",
     "migrate:fresh": "ts-node -r tsconfig-paths/register src/database/migrate-fresh.ts",
-    "migrate:fresh:seed": "ts-node -r tsconfig-paths/register src/database/migrate-fresh.ts --seed"
+    "migrate:fresh:seed": "ts-node -r tsconfig-paths/register src/database/migrate-fresh.ts --seed",
+    "migrate:fresh:prod": "node dist/database/migrate-fresh.js",
+    "migrate:fresh:seed:prod": "node dist/database/migrate-fresh.js --seed"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.8",
