@@ -1,4 +1,4 @@
-import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Seeder, SeederFactoryManager } from '../seeder.interface';
 import { DataSource } from 'typeorm';
 import { Company } from '../../companies/entities/company.entity';
 
@@ -56,13 +56,6 @@ export default class CompanySeeder implements Seeder {
       }
     }
 
-    // Usar factory para gerar mais empresas (apenas se houver menos de 10 empresas)
-    const existingCount = await repository.count();
-    if (existingCount < 10) {
-      const companyFactory = factoryManager.get(Company);
-      const toCreate = 10 - existingCount;
-      await companyFactory.saveMany(Math.min(toCreate, 5));
-    }
   }
 }
 

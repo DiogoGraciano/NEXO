@@ -1,5 +1,5 @@
 import { dataSource } from './data-source';
-import { runSeeders } from 'typeorm-extension';
+import MainSeeder from './seeds/MainSeeder';
 import { config } from 'dotenv';
 
 config();
@@ -18,7 +18,7 @@ const withSeed = process.argv.includes('--seed');
 
     if (withSeed) {
       console.log('Executando seeders...');
-      await runSeeders(dataSource);
+      await new MainSeeder().run(dataSource, null);
       console.log('Seeders executados com sucesso.');
     }
 

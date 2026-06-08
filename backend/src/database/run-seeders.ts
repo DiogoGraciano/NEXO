@@ -1,5 +1,5 @@
 import { dataSource } from './data-source';
-import { runSeeders } from 'typeorm-extension';
+import MainSeeder from './seeds/MainSeeder';
 
 (async () => {
   try {
@@ -7,12 +7,12 @@ import { runSeeders } from 'typeorm-extension';
     console.log('DB_HOST:', process.env.DB_HOST);
     console.log('DB_PORT:', process.env.DB_PORT);
     console.log('DB_NAME:', process.env.DB_NAME);
-    
+
     await dataSource.initialize();
     console.log('Conexão estabelecida com sucesso!');
-    
+
     console.log('Executando seeders...');
-    await runSeeders(dataSource);
+    await new MainSeeder().run(dataSource, null);
     console.log('Seeders executados com sucesso!');
     
     await dataSource.destroy();

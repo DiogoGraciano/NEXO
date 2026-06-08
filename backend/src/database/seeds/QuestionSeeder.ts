@@ -1,4 +1,4 @@
-import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Seeder, SeederFactoryManager } from '../seeder.interface';
 import { DataSource } from 'typeorm';
 import { Question } from '../../questions/entities/question.entity';
 import { Questionnaire } from '../../questionnaires/entities/questionnaire.entity';
@@ -47,19 +47,6 @@ export default class QuestionSeeder implements Seeder {
     }
 
     await repository.insert(questions);
-
-    // Usar factory para gerar mais perguntas
-    const questionFactory = factoryManager.get(Question);
-    const additionalQuestions = await questionFactory.saveMany(5);
-    
-    // Atribuir questionários aleatórios às perguntas geradas
-    if (questionnaires.length > 0 && additionalQuestions.length > 0) {
-      for (const question of additionalQuestions) {
-        const randomQuestionnaire = questionnaires[Math.floor(Math.random() * questionnaires.length)];
-        question.questionario_id = randomQuestionnaire.id;
-        await repository.save(question);
-      }
-    }
   }
 }
 

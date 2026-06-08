@@ -1,13 +1,10 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
-import { SeederOptions } from 'typeorm-extension';
 import { config } from 'dotenv';
 import * as path from 'path';
 
-// Carrega variáveis de ambiente
 config();
 
-// Usa variáveis de ambiente diretamente (funciona melhor no Docker)
-const options: DataSourceOptions & SeederOptions = {
+const options: DataSourceOptions = {
   type: 'postgres',
   host: process.env.DB_HOST || 'localhost',
   port: parseInt(process.env.DB_PORT || '5432', 10),
@@ -15,13 +12,10 @@ const options: DataSourceOptions & SeederOptions = {
   password: process.env.DB_PASSWORD || 'postgres',
   database: process.env.DB_NAME || 'nexo',
   entities: [
-    // Para desenvolvimento (TypeScript) e produção (JavaScript)
     path.join(__dirname, '../**/*.entity{.ts,.js}'),
   ],
   synchronize: false,
   logging: process.env.NODE_ENV === 'development',
-  seeds: [path.join(__dirname, 'seeds/**/*{.ts,.js}')],
-  factories: [path.join(__dirname, 'factories/**/*{.ts,.js}')],
 };
 
 export const dataSource = new DataSource(options);

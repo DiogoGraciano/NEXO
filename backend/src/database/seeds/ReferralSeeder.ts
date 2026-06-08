@@ -1,4 +1,4 @@
-import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Seeder, SeederFactoryManager } from '../seeder.interface';
 import { DataSource } from 'typeorm';
 import { Referral } from '../../referrals/entities/referral.entity';
 import { Student } from '../../students/entities/student.entity';

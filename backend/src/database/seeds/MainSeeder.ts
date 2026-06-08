@@ -1,4 +1,4 @@
-import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Seeder, SeederFactoryManager } from '../seeder.interface';
 import { DataSource } from 'typeorm';
 import FunctionSeeder from './FunctionSeeder';
 import CompanySeeder from './CompanySeeder';

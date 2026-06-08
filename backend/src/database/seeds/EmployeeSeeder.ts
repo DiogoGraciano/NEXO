@@ -1,4 +1,4 @@
-import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Seeder, SeederFactoryManager } from '../seeder.interface';
 import { DataSource } from 'typeorm';
 import { Employee } from '../../employees/entities/employee.entity';
 import { Function } from '../../functions/entities/function.entity';
@@ -120,19 +120,6 @@ export default class EmployeeSeeder implements Seeder {
       }
     }
 
-    // Usar factory para gerar mais funcionários (apenas se houver cargos e menos de 10 funcionários)
-    const existingCount = await repository.count();
-    if (existingCount < 10 && functions.length > 0) {
-      const employeeFactory = factoryManager.get(Employee);
-      const toCreate = 10 - existingCount;
-      const additionalEmployees = await employeeFactory.saveMany(Math.min(toCreate, 3));
-
-      for (const employee of additionalEmployees) {
-        const randomFunction = functions[Math.floor(Math.random() * functions.length)];
-        employee.funcao_id = randomFunction.id;
-        await repository.save(employee);
-      }
-    }
   }
 }
 

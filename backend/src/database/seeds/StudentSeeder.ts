@@ -1,4 +1,4 @@
-import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Seeder, SeederFactoryManager } from '../seeder.interface';
 import { DataSource } from 'typeorm';
 import { Student } from '../../students/entities/student.entity';
 
@@ -103,13 +103,6 @@ export default class StudentSeeder implements Seeder {
       }
     }
 
-    // Usar factory para gerar mais alunos (apenas se houver menos de 10 alunos)
-    const existingCount = await repository.count();
-    if (existingCount < 10) {
-      const studentFactory = factoryManager.get(Student);
-      const toCreate = 10 - existingCount;
-      await studentFactory.saveMany(Math.min(toCreate, 5));
-    }
   }
 }
 

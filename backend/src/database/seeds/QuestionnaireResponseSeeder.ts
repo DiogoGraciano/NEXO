@@ -1,4 +1,4 @@
-import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Seeder, SeederFactoryManager } from '../seeder.interface';
 import { DataSource } from 'typeorm';
 import { QuestionnaireResponse } from '../../questionnaire-responses/entities/questionnaire-response.entity';
 import { Questionnaire } from '../../questionnaires/entities/questionnaire.entity';
