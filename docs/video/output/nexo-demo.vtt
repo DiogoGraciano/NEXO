@@ -1,0 +1,106 @@
+WEBVTT
+
+00:00.000 --> 00:10.776
+Bem-vindo ao NEXO, o sistema de acompanhamento acadêmico e profissional. Neste vídeo vamos percorrer todas as telas do sistema e mostrar como cada funcionalidade funciona.
+
+00:11.034 --> 00:18.810
+Tudo começa pela tela de acesso. O usuário informa o e-mail e a senha e clica em Entrar para acessar o sistema.
+
+00:19.061 --> 00:26.045
+Se a senha estiver incorreta, o sistema exibe uma mensagem de erro, sem revelar detalhes, por segurança.
+
+00:26.299 --> 00:35.899
+Esqueceu a senha? O link Esqueceu sua senha leva ao fluxo de recuperação, onde basta informar o e-mail para receber as instruções por mensagem.
+
+00:36.155 --> 00:43.787
+A partir do link recebido, o usuário define uma nova senha com segurança e volta a acessar o sistema normalmente.
+
+00:44.760 --> 00:58.968
+Após o login chegamos ao Painel principal. No topo, seis indicadores resumem a operação: total de alunos, alunos colocados, empresas parceiras, encaminhamentos ativos, respostas recebidas e eventos próximos.
+
+00:59.224 --> 01:10.120
+Logo abaixo, gráficos interativos mostram a taxa de colocação, a evolução nos últimos doze meses, as empresas que mais recebem alunos e a distribuição por estado.
+
+01:10.375 --> 01:19.255
+O painel ainda destaca a atividade recente e alerta sobre encaminhamentos próximos do desligamento, ajudando a equipe a agir a tempo.
+
+01:19.400 --> 01:27.368
+No menu Cadastros abrimos a tela de Alunos. Aqui ficam todos os estudantes acompanhados, com busca rápida por nome.
+
+01:27.620 --> 01:37.604
+Para cadastrar um novo aluno, abrimos o formulário e preenchemos os dados pessoais e o código. O endereço é preenchido automaticamente a partir do CEP.
+
+01:37.855 --> 01:44.647
+Ao salvar, o aluno passa a aparecer na lista. Seus dados podem ser editados a qualquer momento.
+
+01:44.901 --> 01:54.333
+Cada aluno tem encaminhamentos, que são os vínculos com empresas. Registramos a empresa, a função, a data de admissão e o contato do RH.
+
+01:54.584 --> 02:01.640
+Também é possível gerar relatórios em PDF da lista de alunos e excluir registros quando necessário.
+
+02:01.760 --> 02:08.672
+A tela de Empresas reúne todas as parceiras que recebem os alunos, com o número de vínculos de cada uma.
+
+02:08.925 --> 02:18.141
+Ao cadastrar uma empresa, o sistema valida o CNPJ automaticamente e preenche o endereço pelo CEP, evitando erros de digitação.
+
+02:18.395 --> 02:24.131
+Os relatórios permitem exportar a lista completa de empresas ou agrupada por estado.
+
+02:24.280 --> 02:29.728
+Em Funcionários gerenciamos a equipe interna do sistema, com filtro por função.
+
+02:29.980 --> 02:40.180
+Cada funcionário recebe uma função, como Administrador, Coordenador ou RH, e uma senha de acesso. A função define o que ele pode ver e fazer no sistema.
+
+02:40.436 --> 02:45.116
+Os relatórios listam a equipe completa ou agrupada por função.
+
+02:45.240 --> 02:52.872
+Os Questionários são formulários personalizados. O construtor visual permite montar o formulário campo a campo.
+
+02:53.125 --> 03:01.693
+Adicionamos campos de texto, seleção, múltipla escolha e caixas de marcação, definindo o rótulo de cada um e se é obrigatório.
+
+03:01.950 --> 03:09.126
+Para usuários avançados há também o modo JSON, além de uma pré-visualização do formulário antes de salvar.
+
+03:27.400 --> 03:34.264
+Na área Responder Questionários, o usuário vê os formulários disponíveis e escolhe um para responder.
+
+03:34.517 --> 03:42.173
+O formulário é montado dinamicamente a partir da definição. Os campos obrigatórios são validados antes do envio.
+
+03:42.428 --> 03:47.732
+Ao enviar, uma confirmação mostra que a resposta foi registrada com sucesso.
+
+03:47.880 --> 03:56.208
+Em Acompanhamentos, a tela de Respostas reúne tudo o que foi respondido. Selecionamos um questionário para ver os resultados.
+
+03:56.463 --> 04:02.559
+As estatísticas mostram o total de respostas, as mais recentes e a taxa de conclusão.
+
+04:02.812 --> 04:07.900
+Podemos abrir cada resposta e ver as perguntas e respostas em detalhe.
+
+04:08.040 --> 04:12.480
+A Agenda traz um calendário completo de visitas e eventos.
+
+04:12.734 --> 04:22.886
+Criamos um evento informando título, datas, tipo e os vínculos com aluno e empresa. As cores diferenciam visitas ao aluno, à empresa ou a ambos.
+
+04:23.137 --> 04:28.201
+Os eventos podem ser editados ou removidos diretamente no calendário.
+
+04:28.320 --> 04:36.816
+Em Configurações definimos o servidor de e-mail, o SMTP, usado para os envios do sistema, como a recuperação de senha.
+
+04:37.067 --> 04:43.763
+O botão Testar Conexão valida as credenciais antes de salvar, evitando erros de configuração.
+
+04:43.880 --> 04:53.984
+E assim percorremos todas as telas do NEXO: do cadastro de alunos e empresas aos questionários, à agenda e aos relatórios, tudo integrado em um só lugar.
+
+04:54.237 --> 05:00.741
+Para encerrar a sessão, basta usar o botão Sair na barra lateral. Obrigado por assistir.

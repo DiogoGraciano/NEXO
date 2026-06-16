@@ -258,6 +258,31 @@ figcaption {
   font-style: italic;
 }
 
+/* Vídeos de demonstração */
+figure.video {
+  border-color: #c7d2fe;
+}
+figure.video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+figure.video figcaption {
+  font-style: normal;
+}
+ol.video-chapters {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+ol.video-chapters li {
+  font-size: 0.82rem;
+  margin: 0.15rem 0;
+  break-inside: avoid;
+}
+
 /* ===== Callout boxes ===== */
 .callout {
   margin: 1.25rem 0;

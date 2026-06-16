@@ -1,0 +1,208 @@
+{
+  "01-login": {
+    "title": "Introdução e Acesso",
+    "scenes": [
+      {
+        "id": "01-intro",
+        "startMs": 0
+      },
+      {
+        "id": "01-login-form",
+        "startMs": 11034
+      },
+      {
+        "id": "01-login-erro",
+        "startMs": 19061
+      },
+      {
+        "id": "01-forgot",
+        "startMs": 26299
+      },
+      {
+        "id": "01-reset",
+        "startMs": 36155
+      }
+    ],
+    "durationMs": 44038
+  },
+  "02-dashboard": {
+    "title": "Painel Principal",
+    "scenes": [
+      {
+        "id": "02-dash-kpis",
+        "startMs": 0
+      },
+      {
+        "id": "02-dash-graficos",
+        "startMs": 14464
+      },
+      {
+        "id": "02-dash-atividade",
+        "startMs": 25615
+      }
+    ],
+    "durationMs": 34747
+  },
+  "03-alunos": {
+    "title": "Cadastro de Alunos",
+    "scenes": [
+      {
+        "id": "03-alunos-lista",
+        "startMs": 0
+      },
+      {
+        "id": "03-alunos-novo",
+        "startMs": 8220
+      },
+      {
+        "id": "03-alunos-salvar",
+        "startMs": 18455
+      },
+      {
+        "id": "03-alunos-encaminhamento",
+        "startMs": 25501
+      },
+      {
+        "id": "03-alunos-relatorio",
+        "startMs": 35184
+      }
+    ],
+    "durationMs": 42495
+  },
+  "04-empresas": {
+    "title": "Cadastro de Empresas",
+    "scenes": [
+      {
+        "id": "04-emp-lista",
+        "startMs": 0
+      },
+      {
+        "id": "04-emp-novo",
+        "startMs": 7165
+      },
+      {
+        "id": "04-emp-relatorio",
+        "startMs": 16635
+      }
+    ],
+    "durationMs": 22626
+  },
+  "05-funcionarios": {
+    "title": "Cadastro de Funcionários",
+    "scenes": [
+      {
+        "id": "05-func-lista",
+        "startMs": 0
+      },
+      {
+        "id": "05-func-novo",
+        "startMs": 5700
+      },
+      {
+        "id": "05-func-relatorio",
+        "startMs": 16156
+      }
+    ],
+    "durationMs": 21089
+  },
+  "06-questionarios": {
+    "title": "Construtor de Questionários",
+    "scenes": [
+      {
+        "id": "06-quest-lista",
+        "startMs": 0
+      },
+      {
+        "id": "06-quest-campos",
+        "startMs": 7885
+      },
+      {
+        "id": "06-quest-preview",
+        "startMs": 16710
+      }
+    ],
+    "durationMs": 42260
+  },
+  "07-responder": {
+    "title": "Responder Questionários",
+    "scenes": [
+      {
+        "id": "07-resp-lista",
+        "startMs": 0
+      },
+      {
+        "id": "07-resp-form",
+        "startMs": 7117
+      },
+      {
+        "id": "07-resp-sucesso",
+        "startMs": 15028
+      }
+    ],
+    "durationMs": 20587
+  },
+  "08-respostas": {
+    "title": "Respostas dos Questionários",
+    "scenes": [
+      {
+        "id": "08-ans-seletor",
+        "startMs": 0
+      },
+      {
+        "id": "08-ans-stats",
+        "startMs": 8583
+      },
+      {
+        "id": "08-ans-detalhe",
+        "startMs": 14932
+      }
+    ],
+    "durationMs": 20272
+  },
+  "09-agenda": {
+    "title": "Agenda e Eventos",
+    "scenes": [
+      {
+        "id": "09-ag-mes",
+        "startMs": 0
+      },
+      {
+        "id": "09-ag-novo",
+        "startMs": 4694
+      },
+      {
+        "id": "09-ag-editar",
+        "startMs": 15097
+      }
+    ],
+    "durationMs": 20415
+  },
+  "10-smtp": {
+    "title": "Configuração de E-mail (SMTP)",
+    "scenes": [
+      {
+        "id": "10-smtp-form",
+        "startMs": 0
+      },
+      {
+        "id": "10-smtp-teste",
+        "startMs": 8747
+      }
+    ],
+    "durationMs": 15699
+  },
+  "11-outro": {
+    "title": "Encerramento",
+    "scenes": [
+      {
+        "id": "11-outro-resumo",
+        "startMs": 0
+      },
+      {
+        "id": "11-outro-logout",
+        "startMs": 10357
+      }
+    ],
+    "durationMs": 17116
+  }
+}

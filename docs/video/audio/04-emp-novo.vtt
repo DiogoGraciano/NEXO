@@ -1,0 +1,4 @@
+1
+00:00:00,100 --> 00:00:09,212
+Ao cadastrar uma empresa, o sistema valida o CNPJ automaticamente e preenche o endereço pelo CEP, evitando erros de digitação.
+

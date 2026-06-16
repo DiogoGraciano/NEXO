@@ -1,0 +1,6 @@
+{
+  "name": "nexo-video-pipeline",
+  "private": true,
+  "type": "module",
+  "description": "Pipeline de geração do vídeo demo narrado do NEXO (TTS + Playwright + ffmpeg)."
+}

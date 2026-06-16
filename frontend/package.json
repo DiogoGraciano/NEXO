@@ -16,6 +16,10 @@
     "e2e:report": "playwright show-report",
     "e2e:install": "playwright install chromium",
     "manual:capture": "playwright test --config=playwright.manual.config.ts",
+    "video:tts": "bun ../docs/video/generate-tts.mjs",
+    "video:record": "playwright test --config=playwright.video.config.ts",
+    "video:build": "bun ../docs/video/build.mjs",
+    "video": "bun run video:tts && bun run video:record && bun run video:build",
     "json-server": "json-server --watch db.json --port 8000",
     "api": "json-server --watch db.json --port 3000",
     "generate-pwa-assets": "pwa-assets-generator --config pwa-assets.config.ts"

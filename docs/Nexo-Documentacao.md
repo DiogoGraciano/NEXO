@@ -417,7 +417,43 @@ Um fluxo típico de requisição segue oito passos:
 - Gráficos de tendência (Recharts).
 - Lista de próximas visitas (próximos N eventos).
 
+# Demonstração em Vídeo
+
+O sistema possui um **vídeo demonstrativo narrado** (~5 min, em português) que percorre
+todas as telas mostrando, ao vivo, como cada funcionalidade funciona. O vídeo é gerado
+automaticamente pelo pipeline em `docs/video/` (narração por *text-to-speech*, gravação
+via Playwright e montagem com `ffmpeg`).
+
+**Arquivos:**
+
+- Vídeo completo com capítulos: `docs/video/output/nexo-demo.mp4`
+- Legendas: `docs/video/output/nexo-demo.srt`
+- Clipes por seção: `docs/video/output/clips/`
+- Versão interativa: os clipes estão **embutidos no Manual do Usuário HTML** (`docs/manual/`),
+  cada tela com sua própria demonstração, e o tour completo na página inicial.
+
+**Capítulos:**
+
+| Tempo | Seção |
+|---|---|
+| 00:00 | Introdução e Acesso (login, recuperação de senha) |
+| 00:45 | Painel Principal (indicadores e gráficos) |
+| 01:19 | Cadastro de Alunos (+ encaminhamentos e relatório) |
+| 02:02 | Cadastro de Empresas (validação de CNPJ) |
+| 02:24 | Cadastro de Funcionários (função e senha) |
+| 02:45 | Construtor de Questionários (visual + JSON) |
+| 03:27 | Responder Questionários |
+| 03:48 | Respostas dos Questionários |
+| 04:08 | Agenda e Eventos |
+| 04:28 | Configuração de E-mail (SMTP) |
+| 04:44 | Encerramento |
+
+Para regenerar o vídeo, consulte `docs/video/README.md`.
+
 # Manual do Usuário
+
+> 💡 As telas abaixo também estão demonstradas em **vídeo narrado** — veja a seção
+> [Demonstração em Vídeo](#demonstração-em-vídeo) ou abra o Manual HTML em `docs/manual/`.
 
 ## Acessando o sistema
 
